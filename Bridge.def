@@ -210,6 +210,7 @@ EXPORTS
 	_bridge_timerfd_settime=timerfd_settime
 	_bridge_accept4=_bionic_accept4
 	_bridge_arm_fadvise64_64=__arm_fadvise64_64
+	_bridge_fadvise64=_bionic_fadvise64
 	_bridge_connect=_bionic_connect
 	_bridge_socket=_bionic_socket
 	_bridge_fallocate64=fallocate64
@@ -282,7 +283,6 @@ EXPORTS
 	_bridge_getpeername=_bridge_getpeername
 	_bridge_setpriority=setpriority
 	_bridge_socketpair=socketpair
-	_bridge_vfork=vfork
 	_bridge_klogctl=klogctl
 	_bridge_kill=kill
 	_bridge_listxattr=_bionic_listxattr
@@ -346,3 +346,6 @@ EXPORTS
 	_bridge_truncate64=_bionic_truncate64
 	_bridge_vfork=sys_vfork_imp
 	_bridge_vmsplice=vmsplice
+	_bridge_clock_gettime_x86
+	_bridge_gettimeofday_x86
+	_bridge_set_thread_area=_bionic_set_thread_area

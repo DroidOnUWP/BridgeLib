@@ -120,11 +120,13 @@ void glFramebufferTextureEXT(GLenum target, GLenum attachment, GLuint texture, G
 	DebugLog(__FUNCTION__"(%d)\n", target);
 }
 
-GLboolean GL_APIENTRY glIsEnablediEXT(GLenum target, GLuint index)
+
+GLboolean glIsEnablediEXT(GLenum target, GLuint index)
 {
 	DebugLog(__FUNCTION__"(%d, %d)\n", target, index);
 	return GL_FALSE;
 }
+
 
 void glColorMaskiEXT(GLuint index, GLboolean r, GLboolean g, GLboolean b, GLboolean a)
 {

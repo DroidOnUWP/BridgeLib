@@ -197,3 +197,6 @@ BRIDGE_API  void* sched_yield();
 BRIDGE_API  void* ___fchmodat();
 BRIDGE_API  void* times();
 BRIDGE_API  void* vmsplice();
+
+BRIDGE_API  void* _bridge_clock_gettime_x86();
+BRIDGE_API  void* _bridge_gettimeofday_x86();

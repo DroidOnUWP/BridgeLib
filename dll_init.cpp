@@ -89,10 +89,10 @@ int __dll_init(ModuleInfo32* moduleInfo, uint32_t ul_reason_for_call)
 			/*CreateProcess()*/
 		}
 
-		if (strstr(tmp, "libc++.dll") != NULL)
+		/*if (strstr(tmp, "libc++.dll") != NULL)
 		{
 			//install_breakpoint((void*)(moduleInfo->moduleBase + 0x0068640 + libcxx_offset));
- 			int addr = moduleInfo->moduleBase + 0x0068640 + libcxx_offset;
+			int addr = moduleInfo->moduleBase + 0x0068640 + libcxx_offset;
 			DebugLog("libc++: 0x%x\n", addr);
 		}
 
@@ -102,7 +102,7 @@ int __dll_init(ModuleInfo32* moduleInfo, uint32_t ul_reason_for_call)
 			//install_breakpoint((void*)(moduleInfo->moduleBase + 0x0068640 + libcxx_offset));
 			int addr = moduleInfo->moduleBase + 0x00EBCA0 + libart_offset;
 			DebugLog("libart: 0x%x\n", addr);
-		}
+		}*/
 
 		typedef void(*InitFunction)();
 		uintptr_t* preInitArray = (uintptr_t*)(moduleInfo->preInitArrayOffset + moduleInfo->moduleBase);

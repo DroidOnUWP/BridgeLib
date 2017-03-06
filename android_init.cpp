@@ -247,7 +247,7 @@ void call_main(const wchar_t* moduleName)
 		struct sockaddr_un addr;
 		memset(&addr, 0, sizeof(addr));
 		addr.sun_family = AF_UNIX;
-		strcpy_s(addr.sun_path, "/dev_socket_zygote");
+		strcpy_s(addr.sun_path, "/data/dev_socket_zygote");
 
 		sys_unlink(addr.sun_path);
 

@@ -1,4 +1,5 @@
 #pragma once
+#include <stdint.h>
 #include "BridgeApiDef.h"
 typedef struct {
 	uint64_t flags;

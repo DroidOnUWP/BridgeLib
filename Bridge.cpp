@@ -347,6 +347,8 @@ void* setitimer() { DebugLog(__FUNCTION__"\n"); return 0; }
 void* chdir() { DebugLog(__FUNCTION__"\n"); return 0; }
 void* execve() { DebugLog(__FUNCTION__"\n"); return 0; }
 void* tgkill() { DebugLog(__FUNCTION__"\n"); return 0; }
+void* _bridge_clock_gettime_x86() { DebugLog(__FUNCTION__"\n"); return 0; }
+void* _bridge_gettimeofday_x86() { DebugLog(__FUNCTION__"\n"); return 0; }
 void* sched_getscheduler() { 
 	//mm_dump_memory_mappings();
 	//mm_dump_windows_memory_mappings(GetCurrentProcess());
